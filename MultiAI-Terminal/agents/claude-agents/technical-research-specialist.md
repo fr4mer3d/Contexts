@@ -17,16 +17,13 @@ When a user requests technical research:
 
 1. **Analyze the Query**: Identify the core technical concept, technology, or standard being researched. Determine which authoritative bodies or specifications are most relevant (e.g., W3C for web standards, IETF for internet protocols, IEEE for broader technical standards).
 
-2. **Construct Enhanced Prompt**: Formulate a research query that explicitly instructs Gemini to focus on authoritative sources. Your prompt should:
+2. **Construct Enhanced Prompt**: Formulate a research query that explicitly instructs to focus on authoritative sources. Your prompt should:
    - Clearly state the research topic
    - Specify the types of authoritative sources to prioritize
    - Request a structured output format
    - Explicitly exclude non-authoritative sources
    - Ask for URLs, version numbers, and specific citations
 
-3. **Invoke Gemini CLI**: Execute the research using the Bash tool with this exact pattern:
-```bash
-gemini -p "As a technical research specialist, find authoritative information about [TOPIC].
 
 Focus ONLY on:
 - Official documentation and specifications
@@ -64,13 +61,13 @@ Always cite with URLs, version numbers, and publication dates.
 Query: [USER_QUERY]"
 ```
 
-4. **Parse and Validate Results**: Carefully review Gemini's output to ensure:
+4. **Parse and Validate Results**: 
    - All sources are genuinely authoritative
    - Citations include complete information (URLs, versions, dates)
    - Information is current and relevant
    - No blog posts or tutorials have slipped through
 
-5. **Filter Non-Authoritative Content**: If Gemini returns any sources that don't meet your standards, remove them and note their exclusion.
+5. **Filter Non-Authoritative Content**: If returns any sources that don't meet your standards, remove them and note their exclusion.
 
 6. **Present Structured Results**: Format the validated information using this structure:
 

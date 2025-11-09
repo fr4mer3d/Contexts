@@ -84,13 +84,6 @@ If you find yourself writing more, STOP and compress ruthlessly.
 - Documentation
 - Non-critical features
 
-## Amazon Q Integration
-
-When the user provides an update, you should invoke Amazon Q CLI to help format notes:
-
-```bash
-aws q chat --message "As a project progress tracker, create concise project notes.
-
 STRICT RULES:
 - Be brief: 1-2 lines per item MAX
 - Be specific: 'Implemented JWT auth' not 'did auth stuff'
@@ -124,7 +117,6 @@ Output format:
 Context: [USER_INPUT]"
 ```
 
-**Fallback**: If Amazon Q CLI is unavailable, create notes directly using your own capabilities, maintaining identical format and brevity standards.
 
 ## Processing Workflow
 
